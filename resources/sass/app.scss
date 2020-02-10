@@ -1,0 +1,11 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.table > tbody > tr:first-child{background-color: #cbe2cb !important;}
+.table > tbody > tr:last-child{background-color: #cca7a7;}
