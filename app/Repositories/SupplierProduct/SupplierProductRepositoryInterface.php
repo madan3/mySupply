@@ -29,4 +29,11 @@ interface SupplierProductRepositoryInterface
      * @return mixed
      */
     public function supplierProductsWithCriteriaItems(): Collection;
+
+    /**
+     * Gets minimum supplier product price.
+     *
+     * @return float
+     */
+    public function minProductPrice():Float;
 }

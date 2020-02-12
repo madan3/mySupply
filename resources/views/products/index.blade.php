@@ -21,6 +21,7 @@
                                 <tr>
                                     <th>Product Name</th>
                                     <th>Individual Scores</th>
+                                    <th>Price Scores</th>
                                     <th>Totsl Score</th>
                                 </tr>
                                 </thead>
@@ -33,6 +34,7 @@
                                                 <b>{{$value->criteria->criteria_name}}</b>: {{$value->item_name}} (score: {{$value->item_value_percentage}})<br>
                                             @endforeach
                                         </td>
+                                        <td>{{$supplierProduct->price_score}}</td>
                                         <td>{{$supplierProduct->total_score}}</td>
                                     </tr>
                                 @endforeach

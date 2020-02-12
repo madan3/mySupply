@@ -40,4 +40,14 @@ class SupplierProductRepository implements SupplierProductRepositoryInterface
     {
         return SupplierProduct::with("criteriaItems")->get();
     }
+
+    /**
+     * Gets minimum supplier product price.
+     *
+     * @return float
+     */
+    public function minProductPrice():Float
+    {
+        return SupplierProduct::min('price');
+    }
 }
