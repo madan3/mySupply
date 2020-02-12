@@ -23,6 +23,7 @@ $factory->define(SupplierProduct::class, function (Faker $faker) {
            return factory(User::class)->states('Dell Supplier')->create()->id;
        },
        'product_name' => 'Dell-i7',
+       'price' => '2500',
    ];
 });
 
@@ -31,6 +32,7 @@ $factory->state(SupplierProduct::class, 'Dell Product', [
         return factory(User::class)->states('Dell Supplier')->create()->id;
     },
     'product_name' => 'Dell-i7',
+    'price' => '2500',
 ]);
 
 $factory->state(SupplierProduct::class, 'Lenova Product', [
@@ -38,6 +40,7 @@ $factory->state(SupplierProduct::class, 'Lenova Product', [
         return factory(User::class)->states('Lenova Supplier')->create()->id;
     },
     'product_name' => 'Lenovo-i5',
+    'price' => '2300',
 ]);
 
 $factory->state(SupplierProduct::class, 'Asus Product', [
@@ -45,5 +48,6 @@ $factory->state(SupplierProduct::class, 'Asus Product', [
         return factory(User::class)->states('Asus Supplier')->create()->id;
     },
     'product_name' => 'Asus-i7',
+    'price' => '2000',
 ]);
 
